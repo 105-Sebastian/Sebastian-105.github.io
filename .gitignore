@@ -1,2 +1,8 @@
 node_modules
 .vercel
+netlify
+.well-known
+.vscode
+.github
+.circleci
+.devcontainer
