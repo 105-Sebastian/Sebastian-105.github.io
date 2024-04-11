@@ -17,7 +17,7 @@ fetch("./games2.json")
       const game105 = document.createElement("div");
       game105.className = "game-box";
       game105.innerHTML = `<!-- ${game.name} -->
-      <div class="a" id="${game.name}">
+      <div class="a" id="${game.id}">
       <div class="banner">
          <seb>
             <a class="classText" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on ${game.name}")'>
