@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 // Import essential libraries
 const express = require("express");
 const app = express();
@@ -25,6 +26,7 @@ app.get("/search-result", function (req, res) {
   // eslint-disable-next-line no-undef
   res.sendFile(path.join(__dirname + "/search/result/index.html"));
 });
+
 
 app.get('/hello1', function (req, res) {
   res.status(200).json({

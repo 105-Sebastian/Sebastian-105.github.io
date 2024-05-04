@@ -1,3 +1,6 @@
+/* eslint-disable no-constant-condition */
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 /*
 Here is most of the javascript for the "sebastian-105" website
 */
@@ -23,14 +26,13 @@ document.addEventListener("click", (e) => {
   let myAudio = document.querySelector('#audio')
   myAudio.play();
 });
+// eslint-disable-next-line no-unused-vars
 let defaultThemetext = $("#TheCurrentTheme");
 const defaulttab = {
   title: "Sebastian S",
   icon: "/105.png",
 };
-smartlook("record", { ips: true });
-smartlook("record", { forms: true });
-smartlook("record", { emails: true });
+
 
 var examplelink = location;
 var author = "Sebastian-105";
@@ -281,7 +283,7 @@ class Notification {
   }
 }
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
-// Useless stuff but also helpful don't mess with this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
+//                don't mess with this stuff           %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
 const floatingcontent = `
 

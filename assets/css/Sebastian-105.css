@@ -768,6 +768,7 @@ p {
   z-index: 105;
   top: 0;
   opacity: 1;
+  text-align: center;
   left: 0px;
   font-family: var(--font-family);
   background-color:var(--theme2);
