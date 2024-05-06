@@ -1,4 +1,4 @@
-[![Sebastian-105](./Sebastian-105.gif)](./index.html)<br>
+[![Sebastian-105](./Sebastian.png)](./index.html)<br>
 [![Website](./Sebastian-105.github.io.gif)](https://sebastian-105.github.io)<br>
 
 # Using my Website
