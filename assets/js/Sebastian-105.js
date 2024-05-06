@@ -349,11 +349,11 @@ const floatingcontent = `
     <h1 style="font-size:25px;">Keyboard Shotcuts:</h1>
     <subtitle>Most of the links the <code>ctrl</code> can be repaced with <code>alt</code> to open the page in a new window,  If it has <code>(alt comp)</code> next to it then it works</subtitle>
     <ul class="actionsoptions" onclick="openHelpMenu()">Opens this menu (ctrl + a, ctrl + shift + h, ctrl + shift + p)</ul>
-    <ul class="actionsoptions" onclick="window.open('./game/')">Games page (ctrl + g)</ul>
+    <ul class="actionsoptions" onclick="window.open('/game/')">Games page (ctrl + g)</ul>
     <ul class="actionsoptions" onclick="opengamespage()">Open Games page in new window</ul>
 
     <ul class="actionsoptions" onclick="openSettings()">Open Settings (ctrl + s)</ul>
-    <ul class="actionsoptions" onclick="window.open('./docs/')">Open Docs (ctrl + d)</ul>
+    <ul class="actionsoptions" onclick="window.open('/docs/')">Open Docs (ctrl + d)</ul>
     <ul class="actionsoptions" onclick="aboutblank()">Open page in about:blank tab (ctrl + b) (alt comp)</ul>
     <ul class="actionsoptions" onclick="openhomepage()">Open Homepage (ctrl + h)</ul>
     <ul class="actionsoptions" onclick="openchatroom()">Open Chatroom (ctrl + c) (alt comp)</ul>
@@ -368,7 +368,7 @@ const floatingcontent = `
     <ul class="actionsoptions" onclick="window.open('/game/')">Games page</ul>
     <ul class="actionsoptions" onclick="window.open('/105/chatroom')">Chatroom</ul>
     <ul class="actionsoptions" onclick="window.open('https://organization-105.netlify.app/')">Organization-105</ul>
- <ul class="actionsoptions" onclick="window.open('./105/blocklist/')">Block list</ul>
+ <ul class="actionsoptions" onclick="window.open('/105/blocklist/')">Block list</ul>
    <ul class="actionsoptions" onclick="window.open('/legal/terms/')">Terms And Agreements</ul>
     <ul class="actionsoptions" onclick="window.open('/legal/privacy/')">Privacy Policy</ul>
     <ul class="actionsoptions" onclick="window.open('https://schoolinks-105.netlify.app/')">School Links</ul>
@@ -389,22 +389,22 @@ const floatingcontent = `
 </div><div class="sidenav" >
 
 
-<a onclick="window.open('game/index.html')" target="_blank" title="Games Site">
+<a onclick="window.open('/game/index.html')" target="_blank" title="Games Site">
    <i class="fa fa-gamepad" aria-hidden="true"> Games Page</i>
    
 </a><straight></straight><a onclick="$('#settingsmenu').fadeToggle('fast');console.log('settings page opened');" title="Settings">
    <i class="fa fa-cog" aria-hidden="true"> Settings</i>
   
 </a>
-<straight></straight><a onclick="window.open('105/chatroom/index.html')" target="_blank" title="Chatroom">
+<straight></straight><a onclick="window.open('/105/chatroom/index.html')" target="_blank" title="Chatroom">
    <i class="fa fa-commenting-o" aria-hidden="true"> Chatrooom</i>
   
-</a><straight></straight><a onclick="window.open('legal/terms/index.html')" target="_blank" title="Privacy Policy">
+</a><straight></straight><a onclick="window.open('/legal/terms/index.html')" target="_blank" title="Privacy Policy">
    <i class="fa fa-book" aria-hidden="true"> Privacy Policy</i></a><straight></straight><a onclick="window.open('legal/privacy/index.html')" target="_blank" title="Terms and Agreements">
    <i class="fa fa-handshake-o" aria-hidden="true"> Terms</i>
 
 </a><!--<straight></straight>
- <a onclick="window.open('105/about-me/hireme/index.html')" target="_blank" title="Like What I do?">
+ <a onclick="window.open('/105/about-me/hireme/index.html')" target="_blank" title="Like What I do?">
    <i class="fa fa-book" aria-hidden="true"> Privacy Policy</i></a><straight></straight><a onclick="window.open('legal/privacy/index.html')" target="_blank" title="Terms and Agreements">
    <i class="fa-solid fa-address-card"> Hire Me</i> -->
 
