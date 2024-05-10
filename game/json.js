@@ -84,8 +84,9 @@ html, body{
           }, 5000);
           checkboxState = false; // Set variable to false if checkbox is not checked
         } else {
+          var rootGame = game.root.slice(50)
           window.open(
-            `https://games.sebastian-105.org/${game.root}/${game.file}`
+            `https://games.sebastian-105.org/${rootGame}/${game.file}`
           );
           checkboxState = true; // Set variable to true if checkbox is checked
         }
