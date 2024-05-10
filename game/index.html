@@ -142,26 +142,18 @@
       <span>
         <i
           class="fa-solid fa-circle-info"
-          style="cursor:pointer;"
+          style="cursor: pointer"
           onclick="alert('If this is checked then the game will open in an about:blank tab, the advantage to this is that it doens\'t show up on your history, the disadvantage is that you can\'t reload the page.\nIt\'s really just personal preference.')"></i
       ></span>
     </p>
     <br />
     <div class="optionSlider" id="optionSlider1">
       <label class="switch">
-        <input type="checkbox" checked onchange="handleCheckboxChange(this)" />
+        <input type="checkbox" id="checkBox" checked onchange="updateCheckboxState()" />
         <span class="slider round"></span>
       </label>
     </div>
-    <script>
-      function handleCheckboxChange(checkbox) {
-        if (checkbox.checked) {
-            // Code to run when checkbox is checked
-        } else {
-            // Code to run when checkbox is not checked
-        }
-    }
-    </script>
+    <script></script>
     <!--<h4 style="text-align: center; margin-top:25px; margin-bottom: 0px;">Filters</h4>
     <div class="filterGamesSection" style="margin: auto; margin-top:25px; border-radius: 25px;">
       <button style="background-color: var(--theme2);"></button>

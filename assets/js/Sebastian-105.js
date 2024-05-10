@@ -1,15 +1,18 @@
+/* eslint-disable no-dupe-else-if */
+/* eslint-disable no-redeclare */
 /* eslint-disable no-constant-condition */
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 /*
 Here is most of the javascript for the "sebastian-105" website
 */
-$(window).scroll(function() {
+// const Sebastian_105 = ["https://sebastian-105.org","https://sebastian-105.com"]
+$(window).scroll(function () {
   if ($(this).scrollTop() >= 50) {
     $(".sidenav").addClass("box-shadow");
- } else {
-  $(".sidenav").removeClass("box-shadow");
-}
+  } else {
+    $(".sidenav").removeClass("box-shadow");
+  }
 });
 var name = localStorage.getItem("personname");
 var tabicon105 = localStorage.getItem("tabicon105");
@@ -23,7 +26,7 @@ if ((defaulttheme = "notstet")) {
 }
 
 document.addEventListener("click", (e) => {
-  let myAudio = document.querySelector('#audio')
+  let myAudio = document.querySelector("#audio");
   myAudio.play();
 });
 // eslint-disable-next-line no-unused-vars
@@ -32,7 +35,6 @@ const defaulttab = {
   title: "105 | Sebastian",
   icon: "/105.png",
 };
-
 
 var examplelink = location;
 var author = "Sebastian-105";
@@ -143,7 +145,7 @@ document.addEventListener("keydown", (e) => {
   } else if (e.key === "P" && e.ctrlKey) {
     e.preventDefault();
     openSearchMenu();
-  }  else if (e.key === "s" && e.ctrlKey) {
+  } else if (e.key === "s" && e.ctrlKey) {
     e.preventDefault();
     $("#settingsmenu").fadeToggle("fast");
     console.log("settings page opened");
@@ -153,13 +155,15 @@ document.addEventListener("keydown", (e) => {
     console.log("settings page opened");
   } else if (e.key === "c" && e.ctrlKey) {
     e.preventDefault();
-    prompt("If your on a LPS school account discord is blocked, even so, here is my link to my discord server","To Be Added Soon")
+    prompt(
+      "If your on a LPS school account discord is blocked, even so, here is my link to my discord server",
+      "To Be Added Soon"
+    );
   } else if (e.key === "c" && e.altKey) {
     var chatroomwindow = window.open(
       "/105/chatroom/index.html",
-      'Chatroom | Sebastian',
+      "Chatroom | Sebastian",
       `width=${width} height=${height}`
-      
     );
   } else if (e.key === "o" && e.ctrlKey) {
     e.preventDefault();
@@ -175,22 +179,28 @@ document.addEventListener("keydown", (e) => {
     aboutblank_window();
   } else if (e.key === "m" && e.ctrlKey) {
     $("#menurealz").fadeToggle("fast");
-  } else if ((e.key === "a" && e.ctrlKey) || (e.key === "H" && e.ctrlKey ) || (e.key === "P" && e.ctrlKey) || (e.key === "?")) {
+  } else if (
+    (e.key === "a" && e.ctrlKey) ||
+    (e.key === "H" && e.ctrlKey) ||
+    (e.key === "P" && e.ctrlKey) ||
+    e.key === "?"
+  ) {
     e.preventDefault();
-    openHelpMenu()
-  } 
-  else if (e.key === "p" && ctrlKey) {
+    openHelpMenu();
+  } else if (e.key === "p" && ctrlKey) {
     window.open("https://proxy-105.vercel.app");
   }
 });
 function settingsclose() {
-$("#settingsclose").click(function (e) {
-  $(".menupopup").fadeOut("fast");
-});}
+  $("#settingsclose").click(function (e) {
+    $(".menupopup").fadeOut("fast");
+  });
+}
 function allActionsClose() {
-$("#allactionsclose").click(function (e) {
-  $(".menupopup").fadeOut("fast");
-});}
+  $("#allactionsclose").click(function (e) {
+    $(".menupopup").fadeOut("fast");
+  });
+}
 function setTitle(title = "") {
   if (title) {
     document.title = title;
@@ -262,13 +272,13 @@ function opengamespage() {
   myWindowopengamespage.document.write(gamesContent);
 }
 function openhomepage() {
-    window.open("/");
+  window.open("/");
 }
 function openchatroom() {
-    window.open('/105/chatroom/index.html')
+  window.open("/105/chatroom/index.html");
 }
 function openHelpMenu() {
-    $(`#allactions`).fadeToggle(`fast`);
+  $(`#allactions`).fadeToggle(`fast`);
 }
 function hideE() {
   document.getElementById("hideelement").css("display", "none");
@@ -277,9 +287,9 @@ class Notification {
   constructor(content, status) {
     this.content = content;
     this.status = status;
-  $("#copyalertcorner123").fadeIn("fast").delay(2000).fadeOut("fast");
-  $("#copyalertcorner123").css("background-color", `var(--${status})`);
-  $("#copyalertcorner123").html(content);
+    $("#copyalertcorner123").fadeIn("fast").delay(2000).fadeOut("fast");
+    $("#copyalertcorner123").css("background-color", `var(--${status})`);
+    $("#copyalertcorner123").html(content);
   }
 }
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
@@ -487,5 +497,5 @@ const searchMenu = `
       </form>
     </div>
    
-`
+`;
 // $("body").append(searchMenu);

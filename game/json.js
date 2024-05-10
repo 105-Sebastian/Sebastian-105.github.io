@@ -1,3 +1,6 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-useless-escape */
+/* eslint-disable no-unused-vars */
 // Hello epic hacker (maybe skid) you are looking at one of the many scripts that powers the site, this script has extra comments and info to help you understand what is going on.
 
 // This is a JavaScript code that creates a game catalog page with a search feature, a game detail page, and the ability to save and load user data. It uses fetch to load game data from a JSON file, creates game elements for each game, and adds click event listeners to show the game in a game container. The code also includes functions to handle saving and loading user data as well as a function to handle a specific key sequence.
@@ -39,7 +42,7 @@ fetch("./games2.json")
    </div>
    </div>
    */
-  /* <html>
+      /* <html>
 
 <head>
 <title> </title>
@@ -56,20 +59,41 @@ html, body{
 
 </html>
 `*/
-const screenWidthGame = screen.width;
-const screenHeigthGame = screen.height;
-   game105.onclick = (e) => {
-    const windowContent = `<html><head><title>Sebastian S</title><link rel="/105.png"></head><script src="https://icon105.netlify.app/Sebastian105.js" defer></script><script src="/assets/js/Sebastian-105.js"></script><script src="/assets/js/games-105.js"></script><body><h1 id="hideelement" style="text-align:center;">Give me a second<br/>Loading the game. . . </h1><iframe src="${game.root}/${game.file}" onload="hideE()"style = 'width: 100%; height: 100vh; top: 0; left: 0; position: fixed; outline: none; border: none;'></iframe> <!--JS Libarys--><script src="https://cdn.jsdelivr.net/npm/lax.js" ></script><script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.4/vue.cjs.js" integrity="sha512-Om0T2d9tl4H2ShSsEkWjJeQOlXGJg4OZvXKZw075refp2RNZ1avQDbqd6WhwGbWhqpcn2oPmExCEa/lSLzZaJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js" integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!--JS Libarys end --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <script src="/assets/lib/javascriptlib.js"></script><script src="/assets/js/jQuery.min.js"><script>
+      let aboutBlank;
+      let checkbox = document.getElementById("checkBox");
+      var checkboxState = true; // Assuming checkbox is initially checked
+
+      function updateCheckboxState() {
+        if (checkbox.checked) {
+          checkboxState = true; // Set variable to true if checkbox is checked
+        } else {
+          checkboxState = false; // Set variable to false if checkbox is not checked
+        }
+      }
+      game105.onclick = (e) => {
+        if (checkbox.checked) {
+          const windowContent = `<html><head><title>Sebastian S</title><link rel="/105.png"></head><script src="https://icon105.netlify.app/Sebastian105.js" defer></script><script src="/assets/js/Sebastian-105.js"></script><script src="/assets/js/games-105.js"></script><body><h1 id="hideelement" style="text-align:center;">Give me a second<br/>Loading the game. . . </h1><iframe src="${game.root}/${game.file}" onload="hideE()"style = 'width: 100%; height: 100vh; top: 0; left: 0; position: fixed; outline: none; border: none;'></iframe> <!--JS Libarys--><script src="https://cdn.jsdelivr.net/npm/lax.js" ></script><script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.4/vue.cjs.js" integrity="sha512-Om0T2d9tl4H2ShSsEkWjJeQOlXGJg4OZvXKZw075refp2RNZ1avQDbqd6WhwGbWhqpcn2oPmExCEa/lSLzZaJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js" integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!--JS Libarys end --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <script src="/assets/lib/javascriptlib.js"></script><script src="/assets/js/jQuery.min.js"><script>
     let e = document.querySelector("#hideelement");
     let frame = document.querySelector("#asd")
     
-</script><body></html>`
-    var myWindow = window.open("", "_blank");
-    myWindow.document.write(windowContent);
-    setTimeout(() => {
-      document.getElementById("hideelement").css("display", "none")
-    }, 5000);
-  };
+</script><body></html>`;
+          var myWindow = window.open("", "_blank");
+          myWindow.document.write(windowContent);
+          setTimeout(() => {
+            document.getElementById("hideelement").css("display", "none");
+          }, 5000);
+          checkboxState = false; // Set variable to false if checkbox is not checked
+        } else {
+          window.open(
+            `https://games.sebastian-105.org/${game.root}/${game.file}`
+          );
+          checkboxState = true; // Set variable to true if checkbox is checked
+        }
+      };
+
+      const screenWidthGame = screen.width;
+      const screenHeigthGame = screen.height;
+
       gamesContainer.appendChild(game105);
       // Add click event listener to the game element to show the game in the game container
 
@@ -92,16 +116,16 @@ const screenHeigthGame = screen.height;
       button: "Continue",
     });
   });
-  fetch("./games2.json")
+fetch("./games2.json")
   .then((res) => res.json())
   .then((games) => {
     // Loop through each game and create a new game element for it
     games.forEach((game) => {
       const gameSearch105 = document.createElement("div");
       gameSearch105.className = "menupopup";
-      gameSearch105.innerHTML = `<div class=\"menuicon\">\n   <img src=\"/105.png\" width=\"25\" height=\"25\" style=\"border-radius: 50%;\">\n   <author style=\"font-size:18px;\"> By: Sebastian S</author>\n</div>\n<div id=\"settingsclose\" onclick=\"settingsclose()\"style=\"float:right; cursor: pointer; font-size:50px; margin-top:-52px;margin-right:-15px;\"\n   title=\"close\">×</div>\n<div class=\"menucontent\">Settings</div>\n<div class=\"menuspace\"></div>\n<div class=\"menucontenttext\">\n   <ul id=\"gameSearchItem\"></ul>\n\n   </div>\n</div>\n`
-    })
-  })
+      gameSearch105.innerHTML = `<div class=\"menuicon\">\n   <img src=\"/105.png\" width=\"25\" height=\"25\" style=\"border-radius: 50%;\">\n   <author style=\"font-size:18px;\"> By: Sebastian S</author>\n</div>\n<div id=\"settingsclose\" onclick=\"settingsclose()\"style=\"float:right; cursor: pointer; font-size:50px; margin-top:-52px;margin-right:-15px;\"\n   title=\"close\">×</div>\n<div class=\"menucontent\">Settings</div>\n<div class=\"menuspace\"></div>\n<div class=\"menucontenttext\">\n   <ul id=\"gameSearchItem\"></ul>\n\n   </div>\n</div>\n`;
+    });
+  });
 // Hide the spinner element after the page is loaded
 document.querySelector(".spinner").style.display = "none";
 
