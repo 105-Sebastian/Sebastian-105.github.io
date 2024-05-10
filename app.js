@@ -22,6 +22,10 @@ app.get("/about", function (req, res) {
 // eslint-disable-next-line no-undef
   res.sendFile(path.join(__dirname + "/105/about-me/index.html"));
 });
+app.get("/game/play", function (req, res) {
+  // eslint-disable-next-line no-undef
+    res.sendFile(path.join(__dirname + "/game/games.html"));
+  });
 app.get("/search-result", function (req, res) {
   // eslint-disable-next-line no-undef
   res.sendFile(path.join(__dirname + "/search/result/index.html"));
