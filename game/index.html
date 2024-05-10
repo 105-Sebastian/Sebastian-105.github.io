@@ -42,11 +42,75 @@
       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../assets/lib/font-awesome.min.css" />
+    <link rel="stylesheet" href="/assets/lib/font-awesome.min.css" />
     <title>Sebastian S | Games</title>
-    <link href="../assets/css/Sebastian-105.css" rel="stylesheet" />
+    <link href="/assets/css/Sebastian-105.css" rel="stylesheet" />
     <link rel="icon" href="/105.png" />
   </head>
+  <style>
+    .optionSlider {
+      transform: translateX(50%);
+    }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--font-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--decoration);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px var(--decoration);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  </style>
   <body id="game-page-body">
     <!-- <center>
       <div id="announcementBar" style="top: 6px;">
@@ -70,7 +134,14 @@
         placeholder="Search games . . ."
         onmouseover="gameSearchFunction1(this)"
         onclick="gameSearchFunction()" />
-      </div>
+ 
+    </div>
+    <div class="optionSlider" id="optionSlider1">
+          <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+        </label></div>
+    
     <!--<h4 style="text-align: center; margin-top:25px; margin-bottom: 0px;">Filters</h4>
     <div class="filterGamesSection" style="margin: auto; margin-top:25px; border-radius: 25px;">
       <button style="background-color: var(--theme2);"></button>
@@ -146,11 +217,13 @@
 Scripts  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
     <!--JS Libarys-->
     <script>
-          function gameSearchFunction1(e) {
-        $(e).hide('slow'); setTimeout(() => {
-          $('.gameSearch').text('This feature is currently not working, suck it up.')
+      function gameSearchFunction1(e) {
+        $(e).hide("slow");
+        setTimeout(() => {
+          $(".gameSearch").text(
+            "This feature is currently not working, suck it up."
+          );
         }, 350);
-         
       }
       function gameSearchFunction() {
         swal({
