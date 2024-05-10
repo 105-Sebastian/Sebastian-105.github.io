@@ -29,7 +29,7 @@ document.addEventListener("click", (e) => {
 // eslint-disable-next-line no-unused-vars
 let defaultThemetext = $("#TheCurrentTheme");
 const defaulttab = {
-  title: "Sebastian S",
+  title: "105 | Sebastian",
   icon: "/105.png",
 };
 
@@ -117,7 +117,7 @@ function openlink(link, type) {
   );
 }
 function reseteverything() {
-  document.title = "Sebastian S";
+  document.title = "105 | Sebastian";
   localStorage.setItem("tabname1234", "Sebastian S");
   document.querySelector("link[rel='icon']").href = defaulttab.icon;
   $("#copyalertcorner123").fadeIn("fast").delay(1500).fadeOut("fast");
@@ -196,7 +196,7 @@ function setTitle(title = "") {
     document.title = title;
     tabname1234 = title;
   } else {
-    document.title = "Sebastian-105";
+    document.title = "105 | Sebastian";
   }
 }
 function expandCollapse() {
