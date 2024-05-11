@@ -142,6 +142,13 @@ document.addEventListener("keydown", (e) => {
       "Games | Sebastian",
       `width=${width} height=${height}`
     );
+  }else if (e.key === "r" && e.altKey) {
+    e.preventDefault();
+    var aboutblank123412341234 = window.open(
+      "https://rbr.sebastian-105.org",
+      "Games | Sebastian",
+      `width=${width} height=${height}`
+    );
   } else if (e.key === "P" && e.ctrlKey) {
     e.preventDefault();
     openSearchMenu();
