@@ -1571,7 +1571,7 @@
   },
   {
     "name": "Rocket Bot Royale",
-    "root": "c/rocket",
+    "root": "https://raw.githack.com/Sebastian-105/Assets/main/rocket",
     "sub": "2d battle royale with rocket-tanks",
     "img": "./105.png",
     "id": "rbr",
