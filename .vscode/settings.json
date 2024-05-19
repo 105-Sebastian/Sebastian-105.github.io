@@ -29,7 +29,7 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "workbench.preferredDarkColorTheme": "Default Dark+",
-    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorTheme": "__vs",
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     "editor.defaultColorDecorators": true,
     "editor.guides.bracketPairs": false,
