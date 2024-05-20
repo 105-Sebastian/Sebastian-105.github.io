@@ -1,0 +1,16 @@
+backend:
+  type: "express.js" # type of framework used in the backend
+  url_path: "/" # Url path to access the backend
+  local_packages: "./node_modules" # local development directory for packages
+  dev: "development" # development configuration environment
+  prod: "production" # production configuration environment
+  resources:
+    - name: "express_application" # name of the application
+      engine: "node.js" # engine used by the application
+      version: "v14.18.1" # version of engine used
+      type: "backend" # type of resource it is   
+
+frontend:
+  type: "static" # type of frontend used
+  index_file_name: "index.html" # page which will serve as the landing page for your website
+  url_path: "/" # Url path to access the frontend
