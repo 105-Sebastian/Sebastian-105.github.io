@@ -49,7 +49,7 @@
     "typescript": "^4.2.3"
   },
   "scripts": {
-    "Sebastian": "npm run test && node index.js",
+    "Sebastian": "npm run test && node app.js",
     "test": "jest",
     "build": "npm install",
     "start": "nodemon index.js && npm run test",
