@@ -52,7 +52,7 @@
     "Sebastian": "npm run test && node index.js",
     "test": "jest",
     "build": "npm install",
-    "start": "nodemon index.js && npm run test",
+    "start": "pm2 start index.js && npm run test",
     "vDev": "vercel dev",
     "vTest": "vercel"
   },
