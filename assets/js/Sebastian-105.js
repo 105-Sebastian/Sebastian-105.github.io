@@ -8,6 +8,8 @@
 Here is most of the javascript for the "sebastian-105" website
 */
 
+       
+
 // const Sebastian_105 = ["https://sebastian-105.org","https://sebastian-105.com"]
 $(window).scroll(function () {
   if ($(this).scrollTop() >= 50) {
@@ -16,6 +18,7 @@ $(window).scroll(function () {
     $(".sidenav").removeClass("box-shadow");
   }
 });
+
 var name = localStorage.getItem("personname");
 var tabicon105 = localStorage.getItem("tabicon105");
 var tabname1234 = localStorage.getItem("tabname1234");
@@ -292,12 +295,19 @@ function openHelpMenu() {
 function hideE() {
   document.getElementById("hideelement").css("display", "none");
 }
-class Notification {
-  constructor(content, status) {
-    this.content = content;
-    this.status = status;
-    $("#copyalertcorner123").fadeIn("fast").delay(2000).fadeOut("fast");
-    $("#copyalertcorner123").css("background-color", `var(--${status})`);
-    $("#copyalertcorner123").html(content);
-  }
-}
+
+
+// const searchMenu = `
+//     <div style="text-align: center;">
+//       <form method="get" action="/search/105.html" target="_blank">
+//         <input
+//           type="text"
+//           name="search"
+//           placeholder="Search"
+//           id="toBeChecked" /><br /><br />
+//         <button type="submit">Submit</button>
+//       </form>
+//     </div>
+   
+// `;
+// $("body").append(searchMenu);
